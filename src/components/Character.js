@@ -5,12 +5,23 @@ import styled from 'styled-components';
 export default function Character(info) {
     return (
         <StyledChar className='character'>
-            <h2>{info.character.name}</h2>
-            <h2>{info.character.species}</h2>
+            <StyledH2>{info.character.name}</StyledH2>
+            <StyledH2>{info.character.species}</StyledH2>
         </StyledChar>
     );
 }
 
 const StyledChar = styled.div`
     display: flex;
+    width: 70%;
+    justify-content: space-between;
+    background-color:rgba(16, 34, 28, .9);
+    border-radius: 5px;
+    border: #95b57d 1px solid;
+    color: #e4e551;
+    margin: 10px auto;
+`
+
+const StyledH2 = styled.h2`
+    padding: 20px;
 `
