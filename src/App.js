@@ -28,8 +28,8 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Rick and Morty Characters</h1>
       <div>
-      {characters.map((val, idx)=>{
-        return <Character character={val} key={idx}/>
+      {characters.map((char, index)=>{
+        return <Character character={char} key={index}/>
       })}
       </div>
     </div>
